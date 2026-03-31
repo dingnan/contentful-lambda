@@ -1,0 +1,43 @@
+{
+  "version": "2.0",
+  "routeKey": "$default",
+  "rawPath": "/",
+  "rawQueryString": "",
+  "headers": {
+    "x-contentful-webhook-name": "aws lambda",
+    "content-length": "920",
+    "x-amzn-tls-version": "TLSv1.3",
+    "x-contentful-webhook-request-attempt": "1",
+    "x-forwarded-proto": "https",
+    "x-contentful-event-datetime": "2026-03-30T11:39:51.718Z",
+    "x-forwarded-port": "443",
+    "x-forwarded-for": "35.175.4.28",
+    "x-amzn-tls-cipher-suite": "TLS_AES_128_GCM_SHA256",
+    "x-contentful-idempotency-key": "f613b5248dbc0ac9d22161a522931f5761f0f19a4393ca2f7a04e74e0af5912f",
+    "x-amzn-trace-id": "Root=1-69ca6108-54e5c3771304d38f33f7c28c",
+    "host": "7b2mpy4msjfxkdj72ra3i5iezu0vboyj.lambda-url.us-east-2.on.aws",
+    "content-type": "application/vnd.contentful.management.v1+json",
+    "x-contentful-crn": "crn:contentful:::content:spaces/bkz6hygz9igz/environments/master/entries/4o19ghFQzzNX9uiJifi7Hf",
+    "x-contentful-topic": "ContentManagement.Entry.publish"
+  },
+  "requestContext": {
+    "accountId": "anonymous",
+    "apiId": "7b2mpy4msjfxkdj72ra3i5iezu0vboyj",
+    "domainName": "7b2mpy4msjfxkdj72ra3i5iezu0vboyj.lambda-url.us-east-2.on.aws",
+    "domainPrefix": "7b2mpy4msjfxkdj72ra3i5iezu0vboyj",
+    "http": {
+      "method": "POST",
+      "path": "/",
+      "protocol": "HTTP/1.1",
+      "sourceIp": "35.175.4.28",
+      "userAgent": null
+    },
+    "requestId": "885a5a26-1d1e-4f6b-bff1-af3d9b98d191",
+    "routeKey": "$default",
+    "stage": "$default",
+    "time": "30/Mar/2026:11:39:52 +0000",
+    "timeEpoch": 1774870792805
+  },
+  "body": "eyJtZXRhZGF0YSI6eyJ0YWdzIjpbXSwiY29uY2VwdHMiOltdfSwiZmllbGRzIjp7ImludGVybmFsTmFtZSI6eyJlbi1VUyI6ImJtby1hc2NlbmQtd29ybGQtZWxpdGUtbWFzdGVyY2FyZCJ9LCJjYXJkTmFtZSI6eyJlbi1VUyI6IkJNTyBjYXNoIGJhY2sgY3JlZGl0IGNhcmQgMSJ9LCJjYXJkSW1hZ2UiOnsiZW4tVVMiOnsic3lzIjp7InR5cGUiOiJMaW5rIiwibGlua1R5cGUiOiJBc3NldCIsImlkIjoiNXpqeDNWR2NJMXFkUXBGQVN6SmFEMSJ9fX0sInByb21vdGlvbk9mZmVyIjp7ImVuLVVTIjp7InN5cyI6eyJ0eXBlIjoiTGluayIsImxpbmtUeXBlIjoiRW50cnkiLCJpZCI6IjVYMTdQd0xwbDNsZHE3Rk14OHkyTXoifX19fSwic3lzIjp7InR5cGUiOiJFbnRyeSIsImlkIjoiNG8xOWdoRlF6ek5YOXVpSmlmaTdIZiIsInNwYWNlIjp7InN5cyI6eyJ0eXBlIjoiTGluayIsImxpbmtUeXBlIjoiU3BhY2UiLCJpZCI6ImJrejZoeWd6OWlneiJ9fSwiZW52aXJvbm1lbnQiOnsic3lzIjp7ImlkIjoibWFzdGVyIiwidHlwZSI6IkxpbmsiLCJsaW5rVHlwZSI6IkVudmlyb25tZW50In19LCJjb250ZW50VHlwZSI6eyJzeXMiOnsidHlwZSI6IkxpbmsiLCJsaW5rVHlwZSI6IkNvbnRlbnRUeXBlIiwiaWQiOiJjcmVkaXRDYXJkIn19LCJjcmVhdGVkQnkiOnsic3lzIjp7InR5cGUiOiJMaW5rIiwibGlua1R5cGUiOiJVc2VyIiwiaWQiOiIwMzJQbjQ1emZMaXBiVE1BNTVXbWdxIn19LCJ1cGRhdGVkQnkiOnsic3lzIjp7InR5cGUiOiJMaW5rIiwibGlua1R5cGUiOiJVc2VyIiwiaWQiOiIwMzJQbjQ1emZMaXBiVE1BNTVXbWdxIn19LCJyZXZpc2lvbiI6MTAsImNyZWF0ZWRBdCI6IjIwMjYtMDMtMjdUMjM6NTg6MzkuNzIwWiIsInVwZGF0ZWRBdCI6IjIwMjYtMDMtMzBUMTE6Mzk6NTEuNDExWiIsInB1Ymxpc2hlZFZlcnNpb24iOjI1fX0=",
+  "isBase64Encoded": true
+}

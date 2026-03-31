@@ -1,0 +1,90 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+
+Description: Contentful webhook handler → Akamai NetStorage sync
+
+Globals:
+  Function:
+    Timeout: 30
+    MemorySize: 256
+    Runtime: nodejs18.x
+    Environment:
+      Variables:
+        CONTENTFUL_SPACE_ID: !Ref ContentfulSpaceId
+        CONTENTFUL_ACCESS_TOKEN: !Ref ContentfulAccessToken
+        CONTENTFUL_WEBHOOK_SECRET: !Ref ContentfulWebhookSecret
+        AKAMAI_HOST: !Ref AkamaiHost
+        AKAMAI_CPCODE: !Ref AkamaiCpCode
+        AKAMAI_KEY_NAME: !Ref AkamaiKeyName
+        AKAMAI_KEY: !Ref AkamaiKey
+        AKAMAI_CMS_FOLDER: !Sub "/${AkamaiCpCode}/cms/content"
+
+Parameters:
+  ContentfulSpaceId:
+    Type: String
+    Description: Contentful Space ID
+  ContentfulAccessToken:
+    Type: String
+    NoEcho: true
+    Description: Contentful Content Delivery API token
+  ContentfulWebhookSecret:
+    Type: String
+    NoEcho: true
+    Description: Secret to validate Contentful webhook calls
+  AkamaiHost:
+    Type: String
+    Description: Akamai NetStorage upload hostname
+  AkamaiCpCode:
+    Type: String
+    Description: Akamai CP Code
+  AkamaiKeyName:
+    Type: String
+    Description: Akamai NetStorage key name
+  AkamaiKey:
+    Type: String
+    NoEcho: true
+    Description: Akamai NetStorage key
+
+Resources:
+  ContentfulSyncFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: contentful-to-akamai
+      Handler: index.handler
+      CodeUri: ./lambda/
+      Description: Sync Contentful content updates to Akamai NetStorage
+      Events:
+        ContentfulWebhook:
+          Type: Api
+          Properties:
+            RestApiId: !Ref ContentfulWebhookApi
+            Path: /webhook/contentful
+            Method: POST
+
+  ContentfulWebhookApi:
+    Type: AWS::Serverless::Api
+    Properties:
+      Name: contentful-webhook-api
+      StageName: prod
+      Auth:
+        DefaultAuthorizer: NONE
+      MethodSettings:
+        - ResourcePath: "/*"
+          HttpMethod: "*"
+          ThrottlingBurstLimit: 10
+          ThrottlingRateLimit: 5
+
+  # CloudWatch log group
+  ContentfulSyncLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: !Sub "/aws/lambda/${ContentfulSyncFunction}"
+      RetentionInDays: 14
+
+Outputs:
+  WebhookUrl:
+    Description: "URL to configure in Contentful webhook settings"
+    Value: !Sub "https://${ContentfulWebhookApi}.execute-api.${AWS::Region}.amazonaws.com/prod/webhook/contentful"
+  LambdaArn:
+    Description: Lambda function ARN
+    Value: !GetAtt ContentfulSyncFunction.Arn
