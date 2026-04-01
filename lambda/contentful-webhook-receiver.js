@@ -1,6 +1,6 @@
 import { LambdaClient, InvokeCommand } from "@aws-sdk/client-lambda";
 
-const lambda = new LambdaClient({ region: "us-east-2" });
+const lambda = new LambdaClient({ region: process.env.AWS_REGION });
 // handler.js
 export const handler = async (event) => {
   try {

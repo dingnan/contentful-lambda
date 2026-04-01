@@ -1,0 +1,388 @@
+{
+  "raw": {
+    "metadata": {
+      "tags": [],
+      "concepts": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "bkz6hygz9igz"
+        }
+      },
+      "id": "4o19ghFQzzNX9uiJifi7Hf",
+      "type": "Entry",
+      "createdAt": "2026-03-27T23:58:39.720Z",
+      "updatedAt": "2026-03-31T17:56:49.931Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "publishedVersion": 69,
+      "revision": 32,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "creditCard"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "internalName": "bmo-ascend-world-elite-mastercard",
+      "cardName": "BMO cash back credit card 1027",
+      "cardImage": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Asset",
+          "id": "5zjx3VGcI1qdQpFASzJaD1"
+        }
+      },
+      "promotionOffer": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Entry",
+          "id": "5X17PwLpl3ldq7FMx8y2Mz"
+        }
+      }
+    }
+  },
+  "resolved": {
+    "metadata": {
+      "tags": [],
+      "concepts": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "bkz6hygz9igz"
+        }
+      },
+      "id": "4o19ghFQzzNX9uiJifi7Hf",
+      "type": "Entry",
+      "createdAt": "2026-03-27T23:58:39.720Z",
+      "updatedAt": "2026-03-31T17:56:49.931Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "publishedVersion": 69,
+      "revision": 32,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "creditCard"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "internalName": "bmo-ascend-world-elite-mastercard",
+      "cardName": "BMO cash back credit card 1027",
+      "cardImage": {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "bkz6hygz9igz"
+            }
+          },
+          "id": "5zjx3VGcI1qdQpFASzJaD1",
+          "type": "Asset",
+          "createdAt": "2026-03-30T11:23:43.673Z",
+          "updatedAt": "2026-03-30T11:23:43.673Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 5,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "bmo-ascend-world-elite-mastercard",
+          "file": {
+            "url": "//images.ctfassets.net/bkz6hygz9igz/5zjx3VGcI1qdQpFASzJaD1/74c34fdb8dbcfe4c0f3f01664c410010/bmo-ascend-world-elite-mastercard.png",
+            "details": {
+              "size": 1241793,
+              "image": {
+                "width": 1450,
+                "height": 950
+              }
+            },
+            "fileName": "bmo-ascend-world-elite-mastercard.png",
+            "contentType": "image/png"
+          }
+        }
+      },
+      "promotionOffer": {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "bkz6hygz9igz"
+            }
+          },
+          "id": "5X17PwLpl3ldq7FMx8y2Mz",
+          "type": "Entry",
+          "createdAt": "2026-03-30T11:32:37.859Z",
+          "updatedAt": "2026-03-30T11:32:37.859Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 4,
+          "revision": 1,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "creditCardPromotionOffer"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "internalName": "ascend-world-elite",
+          "promotionOffer": {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "Get ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {},
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "value": "20,000",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": " ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {},
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "value": "points",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": " when you spend $1,500 in the first 3 months - ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {},
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "value": "that's a $133 value!",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        }
+      }
+    }
+  },
+  "includes": {
+    "entries": [
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "bkz6hygz9igz"
+            }
+          },
+          "id": "5X17PwLpl3ldq7FMx8y2Mz",
+          "type": "Entry",
+          "createdAt": "2026-03-30T11:32:37.859Z",
+          "updatedAt": "2026-03-30T11:32:37.859Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 4,
+          "revision": 1,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "creditCardPromotionOffer"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "internalName": "ascend-world-elite",
+          "promotionOffer": {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "Get ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {},
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "value": "20,000",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": " ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {},
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "value": "points",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": " when you spend $1,500 in the first 3 months - ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {},
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "value": "that's a $133 value!",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        }
+      }
+    ],
+    "assets": [
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "bkz6hygz9igz"
+            }
+          },
+          "id": "5zjx3VGcI1qdQpFASzJaD1",
+          "type": "Asset",
+          "createdAt": "2026-03-30T11:23:43.673Z",
+          "updatedAt": "2026-03-30T11:23:43.673Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 5,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "bmo-ascend-world-elite-mastercard",
+          "file": {
+            "url": "//images.ctfassets.net/bkz6hygz9igz/5zjx3VGcI1qdQpFASzJaD1/74c34fdb8dbcfe4c0f3f01664c410010/bmo-ascend-world-elite-mastercard.png",
+            "details": {
+              "size": 1241793,
+              "image": {
+                "width": 1450,
+                "height": 950
+              }
+            },
+            "fileName": "bmo-ascend-world-elite-mastercard.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    ]
+  }
+}
