@@ -1,4 +1,5 @@
 import https from "https";
+import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
 
 // ─── Config (set these in Lambda environment variables) ───────────────────────
 const CONTENTFUL_SPACE_ID = process.env.CONTENTFUL_SPACE_ID;
@@ -93,6 +94,18 @@ async function fetchEntryWithReferences(entryId) {
   };
 }
 
+function saveToS3(key, data) {
+  const s3 = new S3Client({ region: process.env.AWS_REGION });
+  return s3.send(
+    new PutObjectCommand({
+      Bucket: "contentful-data-cc",
+      Key: key,
+      Body: JSON.stringify(data, null, 2),
+      ContentType: "application/json",
+    }),
+  );
+}
+
 // ─── Lambda Handler ────────────────────────────────────────────────────────────
 export const handler = async (event) => {
   console.log("Lambda 2 received event:", JSON.stringify(event));
@@ -118,6 +131,8 @@ export const handler = async (event) => {
         `${data.includes.assets.length} assets`,
     );
 
+    await saveToS3(`contentful/${entryId}.json`, data);
+
     return {
       statusCode: 200,
       body: JSON.stringify(data),
@@ -130,107 +145,3 @@ export const handler = async (event) => {
     };
   }
 };
-
-// /**
-//  * Contentful Content Delivery API client
-//  */
-
-// import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
-// const https = require("https");
-
-// const SPACEID = process.env.CONTENTFUL_SPACEID;
-// const ACCESS_TOKEN = process.env.CONTENTFUL_ACCESS_TOKEN;
-// const ENVIRONMENT = process.env.CONTENTFUL_ENVIRONMENT || "master";
-
-// /**
-//  * Fetch all published entries for a given content type
-//  * Handles pagination automatically
-//  */
-// async function fetchEntries(contentType, locale = "en-US") {
-//   const allItems = [];
-//   let skip = 0;
-//   const limit = 100;
-//   let total = 0;
-
-//   do {
-//     const data = await fetchPage(contentType, locale, skip, limit);
-//     allItems.push(...data.items);
-//     total = data.total;
-//     skip += limit;
-//   } while (skip < total);
-
-//   return { items: allItems, total };
-// }
-
-// function fetchPage(contentType, locale, skip, limit) {
-//   const path =
-//     `/spaces/${SPACEID}/environments/${ENVIRONMENT}/entries` +
-//     `?content_type=${contentType}` +
-//     `&locale=${locale}` +
-//     `&skip=${skip}` +
-//     `&limit=${limit}` +
-//     `&include=2`;
-
-//   return new Promise((resolve, reject) => {
-//     const options = {
-//       hostname: "cdn.contentful.com",
-//       path,
-//       headers: {
-//         Authorization: `Bearer ${ACCESS_TOKEN}`,
-//         "Content-Type": "application/json",
-//       },
-//     };
-
-//     https
-//       .get(options, (res) => {
-//         let data = "";
-//         res.on("data", (chunk) => (data += chunk));
-//         res.on("end", () => {
-//           if (res.statusCode !== 200) {
-//             reject(
-//               new Error(`Contentful API error ${res.statusCode}: ${data}`),
-//             );
-//           } else {
-//             resolve(JSON.parse(data));
-//           }
-//         });
-//       })
-//       .on("error", reject);
-//   });
-// }
-
-// module.exports = { fetchEntries };
-
-// const s3 = new S3Client({ region: "us-east-1" });
-
-// export const handler = async (event) => {
-//   const body = JSON.parse(event.body || "{}");
-//   const topic = event.headers?.["x-contentful-topic"];
-//   const entryId = body?.sys?.id;
-
-//   // Process your Contentful data
-//   const processedData = {
-//     entryId,
-//     topic,
-//     contentType: body?.sys?.contentType?.sys?.id,
-//     processedAt: new Date().toISOString(),
-//     fields: body?.fields,
-//   };
-
-//   // Save to S3
-//   await s3.send(
-//     new PutObjectCommand({
-//       Bucket: "your-bucket-name",
-//       Key: `contentful/${entryId}.json`, // e.g. contentful/abc123.json
-//       Body: JSON.stringify(processedData, null, 2),
-//       ContentType: "application/json",
-//     }),
-//   );
-
-//   console.log(`Saved entry ${entryId} to S3`);
-
-//   return {
-//     statusCode: 200,
-//     body: JSON.stringify({ message: "Saved to S3" }),
-//   };
-// };
