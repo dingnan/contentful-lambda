@@ -1,5 +1,6 @@
 import { createClient } from "contentful";
 import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
+import { APIGatewayProxyEvent, APIGatewayProxyResult } from 'aws-lambda';
 
 const CONTENTFUL_SPACE_ID = process.env.CONTENTFUL_SPACE_ID;
 const CONTENTFUL_ENVIRONMENT = process.env.CONTENTFUL_ENVIRONMENT || "master";
@@ -53,7 +54,7 @@ function saveToS3(key, data) {
   );
 }
 
-export const handler = async (event) => {
+export const handler = async (event: APIGatewayProxyEvent): Promise<APIGatewayProxyResult> => {
   console.log("Lambda 2 received event:", JSON.stringify(event));
 
   const payload =

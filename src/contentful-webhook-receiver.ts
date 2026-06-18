@@ -1,8 +1,9 @@
 import { LambdaClient, InvokeCommand } from "@aws-sdk/client-lambda";
+import { APIGatewayProxyEvent, APIGatewayProxyResult } from 'aws-lambda';
 
 const lambda = new LambdaClient({ region: process.env.AWS_REGION });
 // handler.js
-export const handler = async (event) => {
+export const handler = async (event: APIGatewayProxyEvent): Promise<APIGatewayProxyResult> => {
   try {
     if (!checkSecret(event)) {
       return { statusCode: 401, body: "Unauthorized" };
