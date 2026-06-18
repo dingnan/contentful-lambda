@@ -1,0 +1,23 @@
+{
+  "name": "contentful-akamai-lambda",
+  "version": "1.0.0",
+  "description": "AWS Lambda: sync Contentful content to Akamai NetStorage",
+  "type": "module",
+  "scripts": {
+    "build": "rm -f ./dist/functions.zip && zip -r ./dist/functions.zip src/contentful-webhook-receiver.js src/contentful-entry-fetcher.js package.json node_modules",
+    "deploy:webhook": "aws lambda update-function-code --function-name webhook-handler --zip-file fileb://./dist/functions.zip",
+    "deploy:fetcher": "aws lambda update-function-code --function-name contentful-entry-fetcher --zip-file fileb://./dist/functions.zip",
+    "deploy": "npm run deploy:webhook && npm run deploy:fetcher"
+  },
+  "dependencies": {
+    "@aws-sdk/client-lambda": "^3.0.0",
+    "@aws-sdk/client-s3": "^3.0.0",
+    "contentful": "^11.7.0"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
