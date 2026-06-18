@@ -4,11 +4,9 @@
   "description": "AWS Lambda: sync Contentful content to Akamai NetStorage",
   "type": "module",
   "scripts": {
-    "build:webhook": "printf '%s\n' 'import { handler } from \"./src/contentful-webhook-receiver.js\";' 'export { handler };' > index.js && rm -f ./dist/webhook-receiver.zip && zip -r ./dist/webhook-receiver.zip index.js src/contentful-webhook-receiver.js package.json package-lock.json node_modules",
-    "build:fetcher": "printf '%s\n' 'import { handler } from \"./src/contentful-entry-fetcher.js\";' 'export { handler };' > index.js && rm -f ./dist/entry-fetcher.zip && zip -r ./dist/entry-fetcher.zip index.js src/contentful-entry-fetcher.js package.json package-lock.json node_modules",
-    "build": "npm run build:webhook && npm run build:fetcher",
-    "deploy:webhook": "aws lambda update-function-code --function-name webhook-handler --zip-file fileb://./dist/webhook-receiver.zip",
-    "deploy:fetcher": "aws lambda update-function-code --function-name contentful-entry-fetcher --zip-file fileb://./dist/entry-fetcher.zip",
+    "build": "rm -f ./dist/functions.zip && zip -r ./dist/functions.zip src/contentful-webhook-receiver.js src/contentful-entry-fetcher.js package.json node_modules",
+    "deploy:webhook": "aws lambda update-function-code --function-name webhook-handler --zip-file fileb://./dist/functions.zip",
+    "deploy:fetcher": "aws lambda update-function-code --function-name contentful-entry-fetcher --zip-file fileb://./dist/functions.zip",
     "deploy": "npm run deploy:webhook && npm run deploy:fetcher"
   },
   "dependencies": {
