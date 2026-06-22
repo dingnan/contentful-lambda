@@ -1,0 +1,56 @@
+{
+  "metadata": { "tags": [], "concepts": [] },
+  "fields": {
+    "internalName": { "en-US": "bmo-ascend-world-elite-mastercard" },
+    "cardName": { "en-US": "BMO cash back credit card world elite 2" },
+    "cardImage": {
+      "en-US": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Asset",
+          "id": "5zjx3VGcI1qdQpFASzJaD1"
+        }
+      }
+    },
+    "promotionOffer": {
+      "en-US": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Entry",
+          "id": "5X17PwLpl3ldq7FMx8y2Mz"
+        }
+      }
+    }
+  },
+  "sys": {
+    "type": "Entry",
+    "id": "4o19ghFQzzNX9uiJifi7Hf",
+    "space": {
+      "sys": { "type": "Link", "linkType": "Space", "id": "bkz6hygz9igz" }
+    },
+    "environment": {
+      "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+    },
+    "contentType": {
+      "sys": { "type": "Link", "linkType": "ContentType", "id": "creditCard" }
+    },
+    "createdBy": {
+      "sys": {
+        "type": "Link",
+        "linkType": "User",
+        "id": "032Pn45zfLipbTMA55Wmgq"
+      }
+    },
+    "updatedBy": {
+      "sys": {
+        "type": "Link",
+        "linkType": "User",
+        "id": "032Pn45zfLipbTMA55Wmgq"
+      }
+    },
+    "revision": 35,
+    "createdAt": "2026-03-27T23:58:39.720Z",
+    "updatedAt": "2026-06-22T18:42:22.354Z",
+    "publishedVersion": 75
+  }
+}
