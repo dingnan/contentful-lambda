@@ -5,7 +5,7 @@ import { APIGatewayProxyEvent, APIGatewayProxyResult } from 'aws-lambda';
 const CONTENTFUL_SPACE_ID = process.env.CONTENTFUL_SPACE_ID;
 const CONTENTFUL_ENVIRONMENT = process.env.CONTENTFUL_ENVIRONMENT || "master";
 const CONTENTFUL_ACCESS_TOKEN = process.env.CONTENTFUL_ACCESS_TOKEN;
-
+//https://webhook.site/#!/view/afdc547b-aad7-429a-8e48-38c2f72f9194
 function getContentfulClient() {
   if (!CONTENTFUL_SPACE_ID || !CONTENTFUL_ACCESS_TOKEN) {
     throw new Error(
