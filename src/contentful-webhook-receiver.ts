@@ -24,25 +24,24 @@ export const handler = async (event: APIGatewayProxyEvent): Promise<APIGatewayPr
     // Space ID lives in the decoded body, not a dedicated header
     const spaceId = body?.sys?.space?.sys?.id || "unknown";
 
-    console.log(`Received Contentful webhook: ${topic}`);
-    console.log(
-      `Webhook name: ${webhookName}, Space: ${spaceId}, Event time: ${eventDatetime}`,
-    );
-    console.log("Payload:", JSON.stringify(body, null, 2));
+    const internalName = body?.fields?.internalName;
+
+    console.log(`Received Contentful webhook call:`,
+      {
+        topic,
+        internalName,
+        payload: body,
+        webhookName,
+        eventDatetime,
+        idempotencyKey,
+        spaceId,
+    });
 
     const contentType = body?.sys?.contentType?.sys?.id;
     const entryId = body?.sys?.id;
-    const fields = body?.fields;
 
     switch (topic) {
       case "ContentManagement.Entry.publish": {
-        console.log(`Entry published: ${entryId} (${contentType})`);
-
-        // Access locale-specific fields — sample data uses 'en-US'
-        const internalName = fields?.internalName?.["en-US"];
-        const cardName = fields?.cardName?.["en-US"];
-        console.log(`Card: ${cardName} (internal: ${internalName})`);
-
         // Invoke 2nd Lambda asynchronously (fire and forget)
         await lambda.send(
           new InvokeCommand({
@@ -50,8 +49,8 @@ export const handler = async (event: APIGatewayProxyEvent): Promise<APIGatewayPr
             InvocationType: "Event", // "Event" = async, "RequestResponse" = wait for result
             Payload: JSON.stringify({
               entryId,
+              contentType,
               topic,
-              fields,
             }),
           }),
         );
