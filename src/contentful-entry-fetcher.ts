@@ -60,6 +60,25 @@ function saveToS3(key, data) {
   );
 }
 
+function formatS3KeyFromCardName(data: any) {
+  const cardName = data?.raw?.fields?.cardName;
+  if (typeof cardName !== "string" || cardName.trim().length === 0) {
+    throw new Error("Missing credit card name for S3 filename generation");
+  }
+
+  const safeName = cardName
+    .trim()
+    .toLowerCase()
+    .replace(/[\\/\n\r\t]+/g, " ")
+    .replace(/\s*[-–—]\s*/g, "-")
+    .replace(/[^a-z0-9\-_. ]+/g, "-")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-")
+    .replace(/^[\-_.]+|[\-_.]+$/g, "");
+
+  return `contentful/${safeName}.json`;
+}
+
 // fetches entries that link to a given entry id — one hop up
 async function fetchIncomingLinks(entryId: string): Promise<any[]> {
   const client = getContentfulClient();
@@ -140,7 +159,8 @@ export const handler = async (event: APIGatewayProxyEvent): Promise<APIGatewayPr
         `Fetched entry ${creditCardEntryId} — ${contentType}`,
       );
 
-      await saveToS3(`contentful/${creditCardEntryId}.json`, data);
+      const key = formatS3KeyFromCardName(data);
+      await saveToS3(key, data);
     }
 
     return {

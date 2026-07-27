@@ -1,0 +1,821 @@
+{
+  "raw": {
+    "metadata": {
+      "tags": [],
+      "concepts": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "bkz6hygz9igz"
+        }
+      },
+      "id": "4a5gDDZZ9yJn1wPcfeErIz",
+      "type": "Entry",
+      "createdAt": "2026-07-15T11:00:46.730Z",
+      "updatedAt": "2026-07-27T09:26:14.562Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "publishedVersion": 11,
+      "revision": 4,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "creditCard"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "internalName": "amex-platinum",
+      "cardName": "American Express - Platinum Card",
+      "cardImage": {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "bkz6hygz9igz"
+            }
+          },
+          "id": "01mxTqCl1XVrdR6WZ4ogNm",
+          "type": "Asset",
+          "createdAt": "2026-07-15T10:58:53.230Z",
+          "updatedAt": "2026-07-15T10:59:31.210Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 7,
+          "revision": 2,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "Amex - Platinum",
+          "description": "platinum",
+          "file": {
+            "url": "//images.ctfassets.net/bkz6hygz9igz/01mxTqCl1XVrdR6WZ4ogNm/f06c752e40ee847c391493257f0690b4/images.jpeg",
+            "details": {
+              "size": 36121,
+              "image": {
+                "width": 479,
+                "height": 304
+              }
+            },
+            "fileName": "images.jpeg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      "offers": [
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "bkz6hygz9igz"
+              }
+            },
+            "id": "1sPVdNtDDybcNvmYU27bB5",
+            "type": "Entry",
+            "createdAt": "2026-07-15T12:48:03.791Z",
+            "updatedAt": "2026-07-27T09:29:56.195Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 15,
+            "revision": 6,
+            "contentType": {
+              "sys": {
+                "type": "Link",
+                "linkType": "ContentType",
+                "id": "creditCardPromotionOffer"
+              }
+            },
+            "locale": "en-US"
+          },
+          "fields": {
+            "internalName": "amex-platinum-spring-2026",
+            "promotionOffer": {
+              "nodeType": "document",
+              "data": {},
+              "content": [
+                {
+                  "nodeType": "paragraph",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "text",
+                      "value": "Get ",
+                      "marks": [],
+                      "data": {}
+                    },
+                    {
+                      "nodeType": "text",
+                      "value": "20,000",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "data": {}
+                    },
+                    {
+                      "nodeType": "text",
+                      "value": " ",
+                      "marks": [],
+                      "data": {}
+                    },
+                    {
+                      "nodeType": "text",
+                      "value": "points",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "data": {}
+                    },
+                    {
+                      "nodeType": "text",
+                      "value": " when you spend $5,000 in the first 3 months - ",
+                      "marks": [],
+                      "data": {}
+                    },
+                    {
+                      "nodeType": "text",
+                      "value": "that's a $700 value! ",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "data": {}
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "bkz6hygz9igz"
+              }
+            },
+            "id": "5X17PwLpl3ldq7FMx8y2Mz",
+            "type": "Entry",
+            "createdAt": "2026-03-30T11:32:37.859Z",
+            "updatedAt": "2026-07-16T09:11:39.243Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 74,
+            "revision": 36,
+            "contentType": {
+              "sys": {
+                "type": "Link",
+                "linkType": "ContentType",
+                "id": "creditCardPromotionOffer"
+              }
+            },
+            "locale": "en-US"
+          },
+          "fields": {
+            "internalName": "ascend-world-elite",
+            "promotionOffer": {
+              "nodeType": "document",
+              "data": {},
+              "content": [
+                {
+                  "nodeType": "paragraph",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "text",
+                      "value": "Get ",
+                      "marks": [],
+                      "data": {}
+                    },
+                    {
+                      "nodeType": "text",
+                      "value": "20,000",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "data": {}
+                    },
+                    {
+                      "nodeType": "text",
+                      "value": " ",
+                      "marks": [],
+                      "data": {}
+                    },
+                    {
+                      "nodeType": "text",
+                      "value": "points",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "data": {}
+                    },
+                    {
+                      "nodeType": "text",
+                      "value": " when you spend $5,000 in the first 3 months - ",
+                      "marks": [],
+                      "data": {}
+                    },
+                    {
+                      "nodeType": "text",
+                      "value": "that's a $350 value! ",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "data": {}
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  },
+  "resolved": {
+    "metadata": {
+      "tags": [],
+      "concepts": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "bkz6hygz9igz"
+        }
+      },
+      "id": "4a5gDDZZ9yJn1wPcfeErIz",
+      "type": "Entry",
+      "createdAt": "2026-07-15T11:00:46.730Z",
+      "updatedAt": "2026-07-27T09:26:14.562Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "publishedVersion": 11,
+      "revision": 4,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "creditCard"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "internalName": "amex-platinum",
+      "cardName": "American Express - Platinum Card1",
+      "cardImage": {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "bkz6hygz9igz"
+            }
+          },
+          "id": "01mxTqCl1XVrdR6WZ4ogNm",
+          "type": "Asset",
+          "createdAt": "2026-07-15T10:58:53.230Z",
+          "updatedAt": "2026-07-15T10:59:31.210Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 7,
+          "revision": 2,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "Amex - Platinum",
+          "description": "platinum",
+          "file": {
+            "url": "//images.ctfassets.net/bkz6hygz9igz/01mxTqCl1XVrdR6WZ4ogNm/f06c752e40ee847c391493257f0690b4/images.jpeg",
+            "details": {
+              "size": 36121,
+              "image": {
+                "width": 479,
+                "height": 304
+              }
+            },
+            "fileName": "images.jpeg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      "offers": [
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "bkz6hygz9igz"
+              }
+            },
+            "id": "1sPVdNtDDybcNvmYU27bB5",
+            "type": "Entry",
+            "createdAt": "2026-07-15T12:48:03.791Z",
+            "updatedAt": "2026-07-27T09:29:56.195Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 15,
+            "revision": 6,
+            "contentType": {
+              "sys": {
+                "type": "Link",
+                "linkType": "ContentType",
+                "id": "creditCardPromotionOffer"
+              }
+            },
+            "locale": "en-US"
+          },
+          "fields": {
+            "internalName": "amex-platinum-spring-2026",
+            "promotionOffer": {
+              "nodeType": "document",
+              "data": {},
+              "content": [
+                {
+                  "nodeType": "paragraph",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "text",
+                      "value": "Get ",
+                      "marks": [],
+                      "data": {}
+                    },
+                    {
+                      "nodeType": "text",
+                      "value": "20,000",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "data": {}
+                    },
+                    {
+                      "nodeType": "text",
+                      "value": " ",
+                      "marks": [],
+                      "data": {}
+                    },
+                    {
+                      "nodeType": "text",
+                      "value": "points",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "data": {}
+                    },
+                    {
+                      "nodeType": "text",
+                      "value": " when you spend $5,000 in the first 3 months - ",
+                      "marks": [],
+                      "data": {}
+                    },
+                    {
+                      "nodeType": "text",
+                      "value": "that's a $700 value! ",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "data": {}
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "bkz6hygz9igz"
+              }
+            },
+            "id": "5X17PwLpl3ldq7FMx8y2Mz",
+            "type": "Entry",
+            "createdAt": "2026-03-30T11:32:37.859Z",
+            "updatedAt": "2026-07-16T09:11:39.243Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 74,
+            "revision": 36,
+            "contentType": {
+              "sys": {
+                "type": "Link",
+                "linkType": "ContentType",
+                "id": "creditCardPromotionOffer"
+              }
+            },
+            "locale": "en-US"
+          },
+          "fields": {
+            "internalName": "ascend-world-elite",
+            "promotionOffer": {
+              "nodeType": "document",
+              "data": {},
+              "content": [
+                {
+                  "nodeType": "paragraph",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "text",
+                      "value": "Get ",
+                      "marks": [],
+                      "data": {}
+                    },
+                    {
+                      "nodeType": "text",
+                      "value": "20,000",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "data": {}
+                    },
+                    {
+                      "nodeType": "text",
+                      "value": " ",
+                      "marks": [],
+                      "data": {}
+                    },
+                    {
+                      "nodeType": "text",
+                      "value": "points",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "data": {}
+                    },
+                    {
+                      "nodeType": "text",
+                      "value": " when you spend $5,000 in the first 3 months - ",
+                      "marks": [],
+                      "data": {}
+                    },
+                    {
+                      "nodeType": "text",
+                      "value": "that's a $350 value! ",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "data": {}
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  },
+  "includes": {
+    "entries": [
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "bkz6hygz9igz"
+            }
+          },
+          "id": "1sPVdNtDDybcNvmYU27bB5",
+          "type": "Entry",
+          "createdAt": "2026-07-15T12:48:03.791Z",
+          "updatedAt": "2026-07-27T09:29:56.195Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 15,
+          "revision": 6,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "creditCardPromotionOffer"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "internalName": "amex-platinum-spring-2026",
+          "promotionOffer": {
+            "nodeType": "document",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Get ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "20,000",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "points",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " when you spend $5,000 in the first 3 months - ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "that's a $700 value! ",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "bkz6hygz9igz"
+            }
+          },
+          "id": "5X17PwLpl3ldq7FMx8y2Mz",
+          "type": "Entry",
+          "createdAt": "2026-03-30T11:32:37.859Z",
+          "updatedAt": "2026-07-16T09:11:39.243Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 74,
+          "revision": 36,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "creditCardPromotionOffer"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "internalName": "ascend-world-elite",
+          "promotionOffer": {
+            "nodeType": "document",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Get ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "20,000",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "points",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " when you spend $5,000 in the first 3 months - ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "that's a $350 value! ",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "assets": [
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "bkz6hygz9igz"
+            }
+          },
+          "id": "01mxTqCl1XVrdR6WZ4ogNm",
+          "type": "Asset",
+          "createdAt": "2026-07-15T10:58:53.230Z",
+          "updatedAt": "2026-07-15T10:59:31.210Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 7,
+          "revision": 2,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "Amex - Platinum",
+          "description": "platinum",
+          "file": {
+            "url": "//images.ctfassets.net/bkz6hygz9igz/01mxTqCl1XVrdR6WZ4ogNm/f06c752e40ee847c391493257f0690b4/images.jpeg",
+            "details": {
+              "size": 36121,
+              "image": {
+                "width": 479,
+                "height": 304
+              }
+            },
+            "fileName": "images.jpeg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    ]
+  }
+}
